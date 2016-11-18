@@ -1,0 +1,216 @@
+Christopher Nakovski
+
+run 1
+Transition parameters:
+State 1: 0.999900 0.000100
+State 2: 0.010000 0.990000
+Emission parameters:
+CPG Island A	G	C	T
+State_1:   0.250000	0.250000	0.250000	0.250000
+State_2:   0.200000	0.300000	0.300000	0.200000
+Log probability of most likely path: -2308117.250520
+Number of hits: 2
+Start and end positions of hits:
+	154650, 159578
+	638463, 643446
+
+run 2
+Transition parameters:
+State 1: 0.999987 0.000013
+State 2: 0.002407 0.997593
+Emission parameters:
+CPG Island A	G	C	T
+State_1:   0.345243	0.158073	0.154532	0.342152
+State_2:   0.185945	0.316978	0.312049	0.185028
+Log probability of most likely path: -2187969.287961
+Number of hits: 5
+Start and end positions of hits:
+	97325, 97540
+	97626, 97822
+	111763, 111855
+	118078, 118178
+	138344, 138418
+
+run 3
+Transition parameters:
+State 1: 0.999871 0.000129
+State 2: 0.015361 0.984639
+Emission parameters:
+CPG Island A	G	C	T
+State_1:   0.345702	0.157697	0.154048	0.342553
+State_2:   0.190322	0.302827	0.311265	0.195586
+Log probability of most likely path: -2188194.938942
+Number of hits: 5
+Start and end positions of hits:
+	13524, 13665
+	37389, 37643
+	97325, 97540
+	97626, 97714
+	111763, 111855
+
+run 4
+Transition parameters:
+State 1: 0.999785 0.000215
+State 2: 0.024682 0.975318
+Emission parameters:
+CPG Island A	G	C	T
+State_1:   0.345773	0.157647	0.153945	0.342635
+State_2:   0.187791	0.303344	0.317389	0.191476
+Log probability of most likely path: -2188428.353537
+Number of hits: 5
+Start and end positions of hits:
+	13524, 13665
+	97325, 97540
+	97626, 97714
+	111763, 111855
+	118078, 118178
+
+run 5
+Transition parameters:
+State 1: 0.999773 0.000227
+State 2: 0.026918 0.973082
+Emission parameters:
+CPG Island A	G	C	T
+State_1:   0.345766	0.157654	0.153964	0.342617
+State_2:   0.183101	0.307687	0.320930	0.188283
+Log probability of most likely path: -2188469.262065
+Number of hits: 5
+Start and end positions of hits:
+	13551, 13665
+	97325, 97540
+	97626, 97714
+	111763, 111855
+	118078, 118178
+
+run 6
+Transition parameters:
+State 1: 0.999765 0.000235
+State 2: 0.028603 0.971397
+Emission parameters:
+CPG Island A	G	C	T
+State_1:   0.345762	0.157664	0.153971	0.342603
+State_2:   0.179580	0.310063	0.324143	0.186215
+Log probability of most likely path: -2188503.075546
+Number of hits: 5
+Start and end positions of hits:
+	13551, 13665
+	97325, 97540
+	97626, 97714
+	111763, 111855
+	118078, 118178
+
+run 7
+Transition parameters:
+State 1: 0.999772 0.000228
+State 2: 0.028022 0.971978
+Emission parameters:
+CPG Island A	G	C	T
+State_1:   0.345748	0.157676	0.153980	0.342596
+State_2:   0.179460	0.310255	0.324862	0.185423
+Log probability of most likely path: -2188484.623041
+Number of hits: 5
+Start and end positions of hits:
+	13551, 13665
+	97325, 97540
+	97626, 97714
+	111763, 111855
+	118078, 118178
+
+run 8
+Transition parameters:
+State 1: 0.999772 0.000228
+State 2: 0.028107 0.971893
+Emission parameters:
+CPG Island A	G	C	T
+State_1:   0.345748	0.157675	0.153982	0.342595
+State_2:   0.179453	0.310445	0.324685	0.185417
+Log probability of most likely path: -2188486.481431
+Number of hits: 5
+Start and end positions of hits:
+	13551, 13665
+	97325, 97540
+	97626, 97714
+	111763, 111855
+	118078, 118178
+
+run 9
+Transition parameters:
+State 1: 0.999772 0.000228
+State 2: 0.028118 0.971882
+Emission parameters:
+CPG Island A	G	C	T
+State_1:   0.345747	0.157676	0.153982	0.342595
+State_2:   0.179445	0.310412	0.324732	0.185412
+Log probability of most likely path: -2188486.660079
+Number of hits: 5
+Start and end positions of hits:
+	13551, 13665
+	97325, 97540
+	97626, 97714
+	111763, 111855
+	118078, 118178
+
+runtime: 84068.757812 milliseconds
+run 10
+Transition parameters:
+State 1: 0.999772 0.000228
+State 2: 0.028047 0.971953
+Emission parameters:
+CPG Island A	G	C	T
+State_1:   0.345747	0.157677	0.153982	0.342594
+State_2:   0.179472	0.310309	0.324780	0.185439
+Log probability of most likely path: -2188484.913085
+
+The genes have been marked with the locus tags of overlapping rna sequences in the gbff file
+Number of hits: 50
+Start and end positions of hits:
+	13551, 13665 - MJ_RS00065 | CDS
+	97325, 97540 - MJ_RS00515 | tRNA
+	97626, 97714 - MJ_RS00520 | tRNA
+	111763, 111855 - MJ_RS00580 | tRNA
+	118078, 118178
+	138344, 138418 - MJ_RS00730 | tRNA
+	154609, 157696 - MJ_RS00815 | rRNA
+	157781, 159590 - MJ_RS00820, MJ_RS00825 | rRNA
+	186977, 187066 - MJ_RS00980 | tRNA
+	190830, 190906 - MJ_RS01025 | tRNA
+	215199, 215295
+	227704, 227781
+	264399, 264489
+	291971, 291996
+	303991, 304079
+	325028, 325095
+	334438, 334484
+	358767, 358941
+	359973, 360045
+	402968, 403056
+	412581, 412634
+	543868, 543932
+	552536, 552861
+	619160, 619235
+	637578, 637740
+	637771, 637940
+	637979, 638152
+	638337, 640131
+	640218, 643448
+	643499, 643766
+	763766, 763844
+	764021, 764094
+	774707, 774787
+	862589, 862662
+	863475, 863737
+	863791, 864018
+	864063, 864150
+	873690, 873771
+	883680, 883754
+	951853, 951967
+	986083, 986149
+	1038543, 1038621
+	1129123, 1129193
+	1150141, 1150401
+	1189942, 1190053
+	1313164, 1313250
+	1410403, 1410466
+	1553922, 1553980
+	1622880, 1622972
+	1659450, 1659519

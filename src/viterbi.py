@@ -3,6 +3,7 @@ from math import log, exp
 import sys
 import json
 from collections import deque
+import time
 
 def run_viterbi(gene, params):
 
@@ -154,7 +155,10 @@ if __name__ == '__main__':
 
     raw_gene = parse_fna()
 
+    start_time = time.time() * 1000
+    print("Computer/Language used: Intel i7 in an Asus X550J laptop with 12gb of RAM and python3")
     for i in range(9):
+        print('run ' + str(i + 1))
         hmm = run_viterbi(raw_gene, params)
         states = traceback(hmm)
         print('Transition parameters:')
@@ -176,9 +180,38 @@ if __name__ == '__main__':
         print('Log probability of most likely path: %f' % max(hmm[-1][1][0], hmm[-1][0][0]))
         cpg_islands = find_cpg_islands(states, 5)
         print('Number of hits: %d' % len(cpg_islands))
+        print("Start and end positions of hits:")
         for start, end in cpg_islands:
             print('\t%d, %d' % (start, end))
+        print()
         params = run_em(hmm, raw_gene)
 
+    end_time = time.time() * 1000
+    print("runtime: %f milliseconds" % (end_time - start_time))
+    print('run 10')
+    hmm = run_viterbi(raw_gene, params)
+    states = traceback(hmm)
+    print('Transition parameters:')
+    print('State 1: %f %f' % (params['transitions']['state_1'][0], params['transitions']['state_1'][1]))
+    print('State 2: %f %f' % (params['transitions']['state_2'][0], params['transitions']['state_2'][1]))
+
+    print('Emission parameters:')
+    print('CPG Island A\tG\tC\tT')
+    A = params['emissions']['state_1']['A']
+    G = params['emissions']['state_1']['G']
+    C = params['emissions']['state_1']['C']
+    T = params['emissions']['state_1']['T']
+    print('State_1:   %f\t%f\t%f\t%f' % (A, G, C, T))
+    A = params['emissions']['state_2']['A']
+    G = params['emissions']['state_2']['G']
+    C = params['emissions']['state_2']['C']
+    T = params['emissions']['state_2']['T']
+    print('State_2:   %f\t%f\t%f\t%f' % (A, G, C, T))
+    print('Log probability of most likely path: %f' % max(hmm[-1][1][0], hmm[-1][0][0]))
+    cpg_islands = find_cpg_islands(states, -1)
+    print('Number of hits: %d' % len(cpg_islands))
+    print("Start and end positions of hits:")
+    for start, end in cpg_islands:
+        print('\t%d, %d' % (start, end))
 
 
