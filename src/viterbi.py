@@ -138,14 +138,17 @@ if __name__ == '__main__':
         G = params['emissions']['state_1']['G']
         C = params['emissions']['state_1']['C']
         T = params['emissions']['state_1']['T']
-        print('State_1:   %f\t%f\t%f\t%f' % (A, G, T, C))
+        print('State_1:   %f\t%f\t%f\t%f' % (A, G, C, T))
         A = params['emissions']['state_2']['A']
         G = params['emissions']['state_2']['G']
         C = params['emissions']['state_2']['C']
         T = params['emissions']['state_2']['T']
-        print('State_2:   %f\t%f\t%f\t%f' % (A, G, T, C))
+        print('State_2:   %f\t%f\t%f\t%f' % (A, G, C, T))
         print('Log probability of most likely path: %f' % max(hmm[-1][1], hmm[-1][0]))
         cpg_islands = find_cpg_islands(hmm, 5)
+        print('Number of hits: %d' % len(cpg_islands))
+        for start, end in cpg_islands:
+            print('\t%d, %d' % (start, end))
         params = run_em(hmm, raw_gene)
 
 
